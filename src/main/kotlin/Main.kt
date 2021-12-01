@@ -11,13 +11,4 @@ fun main() {
     file.forEachLine { listaNumeros.add(it.toInt()) }
     try { for (i in 0..listaNumeros.size) { if (listaNumeros[contador] < listaNumeros[contador2]) { contador++;contador2++;resultado++ } else { contador++;contador2++ } } }
     catch (e: IndexOutOfBoundsException) { println(resultado) }
-
-    //No he conseguido hacer funcionar esto
-
-    /*
-    listaNumeros.forEach {if (it>it[i - 1]) {contador++} }
-    println(contador)
-    */
-
-
 }
